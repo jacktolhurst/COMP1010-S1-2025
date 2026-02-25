@@ -29,22 +29,21 @@
 
 \begin{poster}
 {
-headerborder=closed, % Adds a border around the header of content boxes
-colspacing=1em, % Column spacing
-bgColorOne=white, % Background color for the gradient on the left side of the poster
-bgColorTwo=white, % Background color for the gradient on the right side of the poster
-borderColor=lightblue, % Border color
-headerColorOne=black, % Background color for the header in the content boxes (left side)
-headerColorTwo=lightblue, % Background color for the header in the content boxes (right side)
-headerFontColor=white, % Text color for the header text in the content boxes
-boxColorOne=white, % Background color of the content boxes
-textborder=roundedleft, % Format of the border around content boxes, can be: none, bars, coils, triangles, rectangle, rounded, roundedsmall, roundedright or faded
-eyecatcher=true, % Set to false for ignoring the left logo in the title and move the title left
-headerheight=0.1\textheight, % Height of the header
-headershape=roundedright, % Specify the rounded corner in the content box headers, can be: rectangle, small-rounded, roundedright, roundedleft or rounded
-headerfont=\Large\bf\textsc, % Large, bold and sans serif font in the headers of content boxes
-%textfont={\setlength{\parindent}{1.5em}}, % Uncomment for paragraph indentation
-linewidth=2pt % Width of the border lines around content boxes
+headerborder=closed, 
+colspacing=1em, 
+bgColorOne=white, 
+bgColorTwo=white,
+borderColor=lightblue, 
+headerColorOne=black, 
+headerColorTwo=lightblue, 
+headerFontColor=white, 
+boxColorOne=white, 
+textborder=roundedleft, 
+eyecatcher=true, 
+headerheight=0.1\textheight, 
+headershape=roundedright, 
+headerfont=\Large\bf\textsc, 
+linewidth=2pt 
 }
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION 
@@ -72,7 +71,7 @@ Donec non nisl a \textbf{arcu consequat} varius. Sed suscipit cursus luctus. Nul
 \item Fringilla integer 
 \end{enumerate}
 
-\vspace{0.3em} % When there are two boxes, some whitespace may need to be added if the one on the right has more content
+\vspace{0.3em} 
 }
 
 %----------------------------------------------------------------------------------------
@@ -100,8 +99,6 @@ Aliquam non lacus dolor, \textit{a aliquam quam}. Cum sociis natoque penatibus e
 Aliquam auctor, metus id ultrices porta, risus enim cursus sapien, quis iaculis sapien tortor sed odio. Mauris ante orci, euismod vitae tincidunt eu, porta ut neque. Aenean sapien est, viverra vel lacinia nec, venenatis eu nulla. Maecenas ut nunc nibh, et tempus libero. Aenean vitae risus ante. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing.
 \end{multicols}
 
-%------------------------------------------------
-
 \begin{multicols}{2}
 \vspace{1em}
 Sed fringilla tempus hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam ut elit sit amet metus lobortis consequat sit amet in libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel sem magna. Nunc at convallis urna. isus ante. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing. Quisque vestibulum eros eu.
@@ -120,11 +117,11 @@ Sed fringilla tempus hendrerit. Vestibulum ante ipsum primis in faucibus orci lu
 
 \headerbox{References}{name=references,column=0,span=2,row=0.75,height=0.25}{
 
-\renewcommand{\section}[2]{\vskip 0.05em} % Get rid of the default "References" section title
-\nocite{*} % Insert publications even if they are not cited in the poster
-\small{ % Reduce the font size in this block
+\renewcommand{\section}[2]{\vskip 0.05em}
+\nocite{*} 
+\small{ 
 \bibliographystyle{unsrt}
-\bibliography{sample} % Use sample.bib as the bibliography file
+\bibliography{sample} 
 }}
 
 %----------------------------------------------------------------------------------------
@@ -152,8 +149,6 @@ Sed fringilla tempus hendrerit. Vestibulum ante ipsum primis in faucibus orci lu
 \path [line, dashed] (Start2) -- (init);
 \path [line, dashed] (Start2) |- (init2);
 \end{tikzpicture}
-
-%------------------------------------------------
 
 \begin{itemize}\compresslist
 \item Pellentesque eget orci eros. Fusce ultricies, tellus et pellentesque fringilla, ante massa luctus libero, quis tristique purus urna nec nibh. Phasellus fermentum rutrum elementum. Nam quis justo lectus.
@@ -193,7 +188,7 @@ The following equations were used for statistical analysis:
 %	Defence
 %----------------------------------------------------------------------------------------
 
-\headerbox{Defence}{name=results2,column=1,below=objectives,above=references}{ % This block's bottom aligns with the bottom of the conclusion block
+\headerbox{Defence}{name=results2,column=1,below=objectives,above=references}{ 
 
 Donec faucibus purus at tortor egestas eu fermentum dolor facilisis. Maecenas tempor dui eu neque fringilla rutrum. Mauris \emph{lobortis} nisl accumsan.
 
@@ -213,7 +208,7 @@ Treatment 3 & 0.0009271 & 0.296 \\
 Nulla ut porttitor enim. Suspendisse venenatis dui eget eros gravida tempor. Mauris feugiat elit et augue placerat ultrices. Morbi accumsan enim nec tortor consectetur non commodo.
 }
 
-%----------------------------------------------------------------------------------------
+% --- end --- 
 
 \end{poster}
 
