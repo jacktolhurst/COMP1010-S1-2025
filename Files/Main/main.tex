@@ -46,7 +46,7 @@ headerfont=\Large\bf\textsc,
 linewidth=2pt 
 }
 %----------------------------------------------------------------------------------------
-%	TITLE SECTION 
+%	Title 
 %----------------------------------------------------------------------------------------
 %
 {\includegraphics[height=11em]{NewcastleLogo.png}} 
@@ -58,7 +58,7 @@ linewidth=2pt
 %	Introduction
 %----------------------------------------------------------------------------------------
 
-\headerbox{Introduction}{name=objectives,column=0,row=0}{
+\headerbox{Introduction}{name=introduction,column=0,row=0}{
 
 
 Donec non nisl a \textbf{arcu consequat} varius. Sed suscipit cursus luctus. Nulla sit amet elit augue. Curabitur scelerisque mollis dolor, quis blandit lorem condimentum at. Pellentesque sed nibh vel \textbf{dolor} sagittis semper. 
@@ -75,19 +75,10 @@ Donec non nisl a \textbf{arcu consequat} varius. Sed suscipit cursus luctus. Nul
 }
 
 %----------------------------------------------------------------------------------------
-%	Critical Infrastructure
-%----------------------------------------------------------------------------------------
-
-\headerbox{Critical Infrastructure}{name=introduction,column=1,row=0,bottomaligned=objectives}{
-
-Aliquam non lacus dolor, \textit{a aliquam quam}. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla in nibh mauris. Donec vel ligula nisi, a lacinia arcu. Sed mi dui, malesuada vel consectetur et, egestas porta nisi. Sed eleifend pharetra dolor, et dapibus est vulputate eu. \textbf{Integer faucibus elementum felis vitae fringilla.} In hac habitasse platea dictumst. Duis tristique rutrum nisl, nec vulputate elit porta ut. Donec sodales sollicitudin turpis sed convallis. Etiam mauris ligula, blandit adipiscing condimentum eu, dapibus pellentesque risus.
-}
-
-%----------------------------------------------------------------------------------------
 %	Healthcare
 %----------------------------------------------------------------------------------------
 
-\headerbox{Healthcare}{name=results,column=2,span=2,row=0}{
+\headerbox{Healthcare}{name=healthcare,column=2,span=2,row=0}{
 
 \begin{multicols}{2}
 \vspace{1em}
@@ -112,10 +103,10 @@ Sed fringilla tempus hendrerit. Vestibulum ante ipsum primis in faucibus orci lu
 }
 
 %----------------------------------------------------------------------------------------
-%	REFERENCES
+%	References
 %----------------------------------------------------------------------------------------
 
-\headerbox{References}{name=references,column=0,span=2,row=0.75,height=0.25}{
+\headerbox{References}{name=references,column=1,span=3,row=0.75,height=0.25}{
 
 \renewcommand{\section}[2]{\vskip 0.05em}
 \nocite{*} 
@@ -125,30 +116,10 @@ Sed fringilla tempus hendrerit. Vestibulum ante ipsum primis in faucibus orci lu
 }}
 
 %----------------------------------------------------------------------------------------
-%	CONCLUSION
+%	Conclusion and Ethics
 %----------------------------------------------------------------------------------------
 
-\headerbox{Conclusion and Ethics}{name=conclusion,column=2,span=2,row=0,below=results,above=bottom}{
-
-\begin{multicols}{2}
-
-\tikzstyle{decision} = [diamond, draw, fill=blue!20, text width=4.5em, text badly centered, node distance=2cm, inner sep=0pt]
-\tikzstyle{block} = [rectangle, draw, fill=blue!20, text width=5em, text centered, rounded corners, minimum height=4em]
-\tikzstyle{line} = [draw, -latex']
-\tikzstyle{cloud} = [draw, ellipse, fill=red!20, node distance=3cm, minimum height=2em]
-
-\begin{tikzpicture}[node distance = 2cm, auto]
-\node [block] (init) {Initialize Model};
-\node [cloud, left of=init] (Start) {Start};
-\node [cloud, right of=init] (Start2) {Start Two};
-\node [block, below of=init] (init2) {Initialize Two};
-\node [decision, below of=init2] (End) {End};
-\path [line] (init) -- (init2);
-\path [line] (init2) -- (End);
-\path [line, dashed] (Start) -- (init);
-\path [line, dashed] (Start2) -- (init);
-\path [line, dashed] (Start2) |- (init2);
-\end{tikzpicture}
+\headerbox{Conclusion and Ethics}{name=conclusion,column=3,span=1,row=0,below=healthcare,above=bottom}{
 
 \begin{itemize}\compresslist
 \item Pellentesque eget orci eros. Fusce ultricies, tellus et pellentesque fringilla, ante massa luctus libero, quis tristique purus urna nec nibh. Phasellus fermentum rutrum elementum. Nam quis justo lectus.
@@ -157,14 +128,22 @@ Sed fringilla tempus hendrerit. Vestibulum ante ipsum primis in faucibus orci lu
 \item Nunc at convallis urna. isus ante. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing.
 \end{itemize}
 
-\end{multicols}
+}
+
+%----------------------------------------------------------------------------------------
+%	Critical Infrastructure
+%----------------------------------------------------------------------------------------
+
+\headerbox{Critical Infrastructure}{name=criticalInfrastructure,column=1,row=0,above=conclusion}{
+
+Aliquam non lacus dolor, \textit{a aliquam quam}. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla in nibh mauris. Donec vel ligula nisi, a lacinia arcu. Sed mi dui, malesuada vel consectetur et, egestas porta nisi. Sed eleifend pharetra dolor, et dapibus est vulputate eu. \textbf{Integer faucibus elementum felis vitae fringilla.} In hac habitasse platea dictumst. Duis tristique rutrum nisl, nec vulputate elit porta ut. Donec sodales sollicitudin turpis sed convallis. Etiam mauris ligula, blandit adipiscing condimentum eu, dapibus pellentesque risus.
 }
 
 %----------------------------------------------------------------------------------------
 %	Finance
 %----------------------------------------------------------------------------------------
 
-\headerbox{Finance}{name=method,column=0,below=objectives,above=references}{
+\headerbox{Finance}{name=finance,column=0,below=introduction,above=bottom}{
 
 The following materials were required to complete the research:
 
@@ -188,7 +167,7 @@ The following equations were used for statistical analysis:
 %	Defence
 %----------------------------------------------------------------------------------------
 
-\headerbox{Defence}{name=results2,column=1,below=objectives,above=references}{ 
+\headerbox{Defence}{name=defence,column=1,below=healthcare,span=2,above=references}{ 
 
 Donec faucibus purus at tortor egestas eu fermentum dolor facilisis. Maecenas tempor dui eu neque fringilla rutrum. Mauris \emph{lobortis} nisl accumsan.
 

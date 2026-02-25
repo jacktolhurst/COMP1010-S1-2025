@@ -9,6 +9,7 @@
 *.vrb
 *.synctex.gz
 *.synctex(busy)
+*.latexmkrc
 
 Template.pdf
 Main.pdf
