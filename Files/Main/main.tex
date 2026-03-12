@@ -23,8 +23,6 @@
 \setlength{\parsep}{0pt}
 }
 
-\usepackage{url}
-
 \definecolor{lightblue}{rgb}{0.145,0.6666,1} 
 
 \begin{document}
@@ -77,13 +75,13 @@ Donec non nisl a \textbf{arcu consequat} varius. Sed suscipit cursus luctus. Nul
 }
 
 %----------------------------------------------------------------------------------------
-%	SystemArchitecture
+%	System Architecture
 %----------------------------------------------------------------------------------------
 
 \headerbox{System Architecture and Modelling}{name=SystemArchitecture,column=2,span=2,row=0}{
 
 \begin{multicols}{2}
-    Enterprise Information Management Systems (EIMS) rely on a structured system architecture emphasising  consistency, integration and scalability of data modelled across the strictly defined life cycle of information management (figure 1).  Information across its life cycle is first created before being classified through the use of metadata which declares information about the data based on type, source or sensitivity level. Data is then stored into a tiered repository within the database in a location based on its access frequency or cruciality making it significantly easier to find with enterprise search tools. After data is Securely Stored within the database collaboration tools like Microsoft SharePoint are integrated into the EIMS to enable secure sharing over the internet while governance mechanisms ensure that data access is regulated within the system throughout its life cycle before its eventual disposition.
+    Enterprise Information Management Systems (EIMS) rely on a structured system architecture emphasising  consistency, integration and scalability of data modelled across the strictly defined life cycle of information management (figure 1) \cite{hyland2024}.  Information across its life cycle is first created before being classified through the use of metadata which declares information about the data based on type, source or sensitivity level \cite{splunk2024}.  Data is then stored into a tiered repository within the database in a location based on its access frequency or cruciality making it significantly easier to find with enterprise search tools \cite{enterpriseSearch2025}. After data is Securely Stored within the database collaboration tools like Microsoft SharePoint are integrated into the EIMS to enable secure sharing over the internet while governance mechanisms ensure that data access is regulated within the system throughout its life cycle before its eventual disposition.
     
     
     \begin{center}
@@ -124,12 +122,12 @@ Donec non nisl a \textbf{arcu consequat} varius. Sed suscipit cursus luctus. Nul
 }
 
 %----------------------------------------------------------------------------------------
-%	Critical Infrastructure
+%	DATA MANAGEMENT
 %----------------------------------------------------------------------------------------
 
-\headerbox{Critical Infrastructure}{name=criticalInfrastructure,column=1,row=0,above=conclusion}{
+\headerbox{Data Management}{name=dataManagement,column=1,row=0,above=conclusion}{
 
-Aliquam non lacus dolor, \textit{a aliquam quam}. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla in nibh mauris. Donec vel ligula nisi, a lacinia arcu. Sed mi dui, malesuada vel consectetur et, egestas porta nisi. Sed eleifend pharetra dolor, et dapibus est vulputate eu. \textbf{Integer faucibus elementum felis vitae fringilla.} In hac habitasse platea dictumst. Duis tristique rutrum nisl, nec vulputate elit porta ut. Donec sodales sollicitudin turpis sed convallis. Etiam mauris ligula, blandit adipiscing condimentum eu, dapibus pellentesque risus.
+Enterprise Information Management Systems (EIMS) structure how organisations manage data across its lifecycle: Create, Classify, Store, Retrieve, Share, and Govern. By integrating centralised repositories, metadata classification, and enterprise search, these systems reduce data fragmentation and improve accessibility \cite{armbrust2010}. Automated retrieval technologies can reduce document handling time by 40–50\%, significantly improving operational efficiency \cite{davenport2018}. However, large centralised repositories present significant security risks, becoming prime targets for cyberattacks and requiring robust data protection measures \cite{verizon2023}.
 }
 
 %----------------------------------------------------------------------------------------
