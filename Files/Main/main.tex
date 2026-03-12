@@ -61,17 +61,8 @@ linewidth=2pt
 \headerbox{Introduction}{name=introduction,column=0,row=0}{
 
 
-Donec non nisl a \textbf{arcu consequat} varius. Sed suscipit cursus luctus. Nulla sit amet elit augue. Curabitur scelerisque mollis dolor, quis blandit lorem condimentum at. Pellentesque sed nibh vel \textbf{dolor} sagittis semper. 
+Software Development is widespread across the IT field, with the sole purpose of controlling computers. The intention is to harness the resources of a computer system to provide useful functionality for the user or entity controlling said subject. Created by a developer, code can be written to take control of functionality that a computer has, and in unison, a device can be manipulated into performing tasks to reach an end goal. Software is used for many purposes, from controlling file systems, to games, to creative arts, to simply entertaining the user. However, when software is deployed in a specialized environment, this is a Specialized Software System. Specialized Software Systems are deployed for niche applications as opposed to broad applications, thus, they are often developed by specialized teams. For example, Microsoft Sharepoint has a Specialised Software System, in the form of a Database. Within a specific deployment, goals are easier to set, and developers can focus on features, algorithms, and implementations that may benefit the specific application over a generalized deployment. This may increase productivity of the host system, if optimized for the environment that a Specialized Software System is being deployed within.
 
-\begin{enumerate}\compresslist
-\item Feugiat vitae elit
-\item bibendum ante sed lacinia eros in
-\item Curabitur scelerisque arcu consequat varius
-\item Dapibus nulla id purus consectetur
-\item Fringilla integer 
-\end{enumerate}
-
-\vspace{0.3em} 
 }
 
 %----------------------------------------------------------------------------------------
@@ -81,12 +72,13 @@ Donec non nisl a \textbf{arcu consequat} varius. Sed suscipit cursus luctus. Nul
 \headerbox{System Architecture and Modelling}{name=SystemArchitecture,column=2,span=2,row=0}{
 
 \begin{multicols}{2}
-    Enterprise Information Management Systems (EIMS) rely on a structured system architecture emphasising  consistency, integration and scalability of data modelled across the strictly defined life cycle of information management (figure 1).  Information across its life cycle is first created before being classified through the use of metadata which declares information about the data based on type, source or sensitivity level.  Data is then stored into a tiered repository within the database in a location based on its access frequency or cruciality making it significantly easier to find with enterprise search tools. After data is Securely Stored within the database collaboration tools like Microsoft SharePoint are integrated into the EIMS to enable secure sharing over the internet while governance mechanisms ensure that data access is regulated within the system throughout its life cycle before its eventual disposition.
+    Enterprise Information Management Systems (EIMS) rely on a structured system architecture emphasising  consistency, integration and scalability of data modelled across the strictly defined life cycle of information management (figure~\ref{fig:lifecycle}).  Information across its life cycle is first created before being classified through the use of metadata which declares information about the data based on type, source or sensitivity level \cite{verizon2023}.  Data is then stored into a tiered repository within the database in a location based on its access frequency or cruciality making it significantly easier to find with enterprise search tools. After data is Securely Stored within the database collaboration tools like Microsoft SharePoint are integrated into the EIMS to enable secure sharing over the internet while governance mechanisms ensure that data access is regulated within the system throughout its life cycle before its eventual disposition.
     
     
     \begin{center}
-    \includegraphics[width=0.8\linewidth]{InformationLifeCycle.png}
-    \captionof{figure}{The Life Cycle of software development}
+        \includegraphics[width=0.8\linewidth]{InformationLifeCycle.png}
+        \captionof{figure}{The Life Cycle of software development}
+        \label{fig:lifecycle}
     \end{center}
 \end{multicols}
 
@@ -97,13 +89,13 @@ Donec non nisl a \textbf{arcu consequat} varius. Sed suscipit cursus luctus. Nul
 %	References
 %----------------------------------------------------------------------------------------
 
-\headerbox{References}{name=references,column=1,span=3,row=0.75,height=0.25}{
+\headerbox{References}{name=references,column=0,span=3,row=0.75,height=0.25}{
 
 \renewcommand{\section}[2]{\vskip 0.05em}
 \nocite{*} 
 \small{ 
-\bibliographystyle{unsrt}
-\bibliography{bibliography} 
+    \bibliographystyle{unsrt}
+    \bibliography{bibliography}
 }}
 
 %----------------------------------------------------------------------------------------
@@ -112,12 +104,7 @@ Donec non nisl a \textbf{arcu consequat} varius. Sed suscipit cursus luctus. Nul
 
 \headerbox{Conclusion and Ethics}{name=conclusion,column=3,span=1,row=0,below=SystemArchitecture,above=bottom}{
 
-\begin{itemize}\compresslist
-\item Pellentesque eget orci eros. Fusce ultricies, tellus et pellentesque fringilla, ante massa luctus libero, quis tristique purus urna nec nibh. Phasellus fermentum rutrum elementum. Nam quis justo lectus.
-\item Vestibulum sem ante, hendrerit a gravida ac, blandit quis magna.
-\item Donec sem metus, facilisis at condimentum eget, vehicula ut massa. Morbi consequat, diam sed convallis tincidunt, arcu nunc.
-\item Nunc at convallis urna. isus ante. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing.
-\end{itemize}
+In conclusion, Databases in Specialised Software Systems are everywhere. This is because, in many cases, commercial software may not be a viable solution to an issue. Especially in secure places like the aforementioned subjects where these systems may be deployed. However, there is now an ethical weakness. Specialised Software Systems can be developed indefinitely and will become astronomical in size. Take Microsoft Sharepoint, for example. So many people (or staff within the parent company) may be storing personal data on these systems, and therefore, may have a real-world damaging response to a data-breach. If these systems are accessible by third parties, they need to be built with the consideration of security. A large database with less-than-sufficient security is generally ethically dangerous. Though, large dedicated companies, such as those in the Defence area, may put way more emphasis on their security to protect internal data.
 
 }
 
@@ -127,14 +114,14 @@ Donec non nisl a \textbf{arcu consequat} varius. Sed suscipit cursus luctus. Nul
 
 \headerbox{Data Management}{name=dataManagement,column=1,row=0,above=conclusion}{
 
-Enterprise Information Management Systems (EIMS) structure how organisations manage data across its lifecycle: Create, Classify, Store, Retrieve, Share, and Govern. By integrating centralised repositories, metadata classification, and enterprise search, these systems reduce data fragmentation and improve accessibility \cite{armbrust2010}. Automated retrieval technologies can reduce document handling time by 40–50\%, significantly improving operational efficiency \cite{davenport2018}. However, large centralised repositories present significant security risks, becoming prime targets for cyberattacks and requiring robust data protection measures \cite{verizon2023}.
+Enterprise Information Management Systems (EIMS) structure how organisations manage data across its lifecycle: Create, Classify, Store, Retrieve, Share, and Govern. By integrating centralised repositories, metadata classification, and enterprise search, these systems reduce data fragmentation and improve accessibility \cite{armbrust2010}. Automated retrieval technologies can reduce document handling time by 40–50\%, significantly improving operational efficiency \cite{davenport2018}. However, large centralised repositories present significant security risks, becoming prime targets for cyberattacks and requiring robust data protection measures.
 }
 
 %----------------------------------------------------------------------------------------
 %	Finance
 %----------------------------------------------------------------------------------------
 
-\headerbox{Finance}{name=finance,column=0,below=introduction,above=bottom}{
+\headerbox{Finance}{name=finance,column=0,below=introduction,above=references}{
 
 The following materials were required to complete the research:
 
