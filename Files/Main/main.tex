@@ -23,6 +23,8 @@
 \setlength{\parsep}{0pt}
 }
 
+\usepackage{url}
+
 \definecolor{lightblue}{rgb}{0.145,0.6666,1} 
 
 \begin{document}
@@ -103,7 +105,7 @@ Donec non nisl a \textbf{arcu consequat} varius. Sed suscipit cursus luctus. Nul
 \nocite{*} 
 \small{ 
 \bibliographystyle{unsrt}
-\bibliography{sample} 
+\bibliography{bibliography} 
 }}
 
 %----------------------------------------------------------------------------------------
@@ -155,27 +157,19 @@ The following equations were used for statistical analysis:
 }
 
 %----------------------------------------------------------------------------------------
-%	Defence
+%	Defence Systems
 %----------------------------------------------------------------------------------------
 
-\headerbox{Defence}{name=defence,column=1,below=SystemArchitecture,span=2,above=references}{ 
+\headerbox{Defence Systems}{name=defence,column=1,below=SystemArchitecture,span=2,above=references}{ 
+\begin{multicols}{2}
+    The management of databases and their data within defence systems are inherent to national security and require state of the art software solutions. Interactions between countries and their national security follow security mandates set by international organisations, such as ISO 27001, which aim to continue 'establishing and continually improving… information security management systems' \cite{iso27001}. Another key concept for data management systems is implementing data-driven codebases that prioritise active control over functional-driven frameworks generally imposed upon databases. \cite{brynjolfsson2011}
 
-Donec faucibus purus at tortor egestas eu fermentum dolor facilisis. Maecenas tempor dui eu neque fringilla rutrum. Mauris \emph{lobortis} nisl accumsan.
+    \columnbreak
+    Social engineering attacks frequently pose a greater risk to defence operations as they are generally perceived as lower risk than generalised ones \cite{dataPlanning2015}. Hence, the Australian government, as of 2024, created the Cyber Security Act, where its main goal was to 'improve the response to and minimise the impact of cyber security incidents…' within society, while still giving governmental access to 'facilitate the whole of Government response to significant cyber security incidents…'\cite{cybersecurityAct2024}. This legislation also manages and secures sensitive data from perceived threats, providing citizens with a compliant software system that protects their data.
 
-\begin{center}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\captionof{table}{Table caption}
-\end{center}
+\end{multicols}
 
-Nulla ut porttitor enim. Suspendisse venenatis dui eget eros gravida tempor. Mauris feugiat elit et augue placerat ultrices. Morbi accumsan enim nec tortor consectetur non commodo.
+
 }
 
 % --- end --- 
