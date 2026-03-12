@@ -10,6 +10,8 @@
 *.synctex.gz
 *.synctex(busy)
 *.latexmkrc
+*.bbl
+*.blg
 
 Template.pdf
 Main.pdf
