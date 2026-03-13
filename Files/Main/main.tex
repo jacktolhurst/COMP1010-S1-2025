@@ -50,7 +50,7 @@ linewidth=2pt
 %----------------------------------------------------------------------------------------
 %
 {\includegraphics[height=11em]{NewcastleLogo.png}} 
-{\bf\textsc{Very Cool Name}\vspace{0.5em}}
+{\bf\textsc{A Critical Analysis of Entriprise Management Systems}\vspace{0.5em}}
 {\textsc{\{ Jack Tolhurst, Tory Jones, Naman Mor, James Harrison, and Edward Ma \} \newline University Of Newcastle}}
 {\includegraphics[height=11em]{NewcastleLogo.png}}
 
@@ -60,8 +60,7 @@ linewidth=2pt
 
 \headerbox{Introduction\hspace{0.15cm} $\vcenter{\hbox{\includegraphics[width=0.015\linewidth]{Bulb.png}}}$}{name=introduction,column=0,row=0}{
 
-Software Development is widespread across the IT field, with the sole purpose of controlling computers. The intention is to harness the resources of a computer system to provide useful functionality for the user or entity controlling said subject. Created by a developer, code can be written to take control of functionality that a computer has, and in unison, a device can be manipulated into performing tasks to reach an end goal. Software is used for many purposes, from controlling file systems, to games, to creative arts, to simply entertaining the user. However, when software is deployed in a specialized environment, this is a Specialized Software System. Specialized Software Systems are deployed for niche applications as opposed to broad applications, thus, they are often developed by specialized teams. For example, Microsoft Sharepoint has a Specialised Software System, in the form of a Database. Within a specific deployment, goals are easier to set, and developers can focus on features, algorithms, and implementations that may benefit the specific application over a generalized deployment. This may increase productivity of the host system, if optimized for the environment that a Specialized Software System is being deployed within.
-
+Software Development is widespread across the IT field, with the sole purpose of harnessing the resources of a computer system to provide useful functionality for the user. Software is used for many purposes, from controlling file systems, to games, to creative arts. However, when software is deployed in a specialized environment, this is a Specialized Software System, deployed for niche applications and often developed by specialized teams. For example, Microsoft SharePoint has a Specialised Software System in the form of a Database. Within a specific deployment, developers can focus on features, algorithms, and implementations that benefit the application, which may increase productivity of the host system.
 }
 
 %----------------------------------------------------------------------------------------
@@ -71,9 +70,7 @@ Software Development is widespread across the IT field, with the sole purpose of
 \headerbox{System Architecture and Modelling \hspace{0.15cm} $\vcenter{\hbox{\includegraphics[width=0.015\linewidth]{Column.png}}}$}{name=SystemArchitecture,column=2,span=2,row=0}{
 
 \begin{multicols}{2}
-    Enterprise Information Management Systems (EIMS) rely on a structured system architecture emphasising  consistency, integration and scalability of data modelled across the strictly defined life cycle of information management (figure~\ref{fig:lifecycle}).  Information across its life cycle is first created before being classified through the use of metadata which declares information about the data based on type, source or sensitivity level \cite{verizon2023}.  Data is then stored into a tiered repository within the database in a location based on its access frequency or cruciality making it significantly easier to find with enterprise search tools. After data is Securely Stored within the database collaboration tools like Microsoft SharePoint are integrated into the EIMS to enable secure sharing over the internet while governance mechanisms ensure that data access is regulated within the system throughout its life cycle before its eventual disposition.
-    
-    
+    Enterprise Information Management Systems (EIMS) are a structured system that ensures consistency, integration and scalability of data. EIMS relies on a strictly defined life cycle of information management (figure~\ref{fig:lifecycle}). Information across its life cycle is first created before being classified through the use of metadata which declares information about the data based on type, source or sensitivity level. Data is then stored into a tiered repository within the database in a location based on its access frequency or cruciality making it significantly easier to find with enterprise search tools. After data is Securely Stored within the database collaboration tools like Microsoft SharePoint are integrated into the EIMS to enable secure sharing over the internet while governance mechanisms ensure that data access is regulated within the system throughout its life cycle before its eventual disposition.
     \begin{center}
         \includegraphics[width=0.8\linewidth]{InformationLifeCycle.png}
         \captionof{figure}{The Life Cycle of software development}
@@ -98,12 +95,12 @@ Software Development is widespread across the IT field, with the sole purpose of
 }}
 
 %----------------------------------------------------------------------------------------
-%	Conclusion and Ethics
+%	Conclusion
 %----------------------------------------------------------------------------------------
 
-\headerbox{Conclusion and Ethics\hspace{0.15cm} $\vcenter{\hbox{\includegraphics[width=0.015\linewidth]{Presentation.png}}}$}{name=conclusion,column=3,span=1,row=0,below=SystemArchitecture,above=bottom}{
+\headerbox{Conclusion\hspace{0.15cm} $\vcenter{\hbox{\includegraphics[width=0.015\linewidth]{Presentation.png}}}$}{name=conclusion,column=3,span=1,row=0,below=SystemArchitecture,above=bottom}{
 
-In conclusion, Databases in Specialised Software Systems are everywhere. This is because, in many cases, commercial software may not be a viable solution to an issue, especially in secure places like the aforementioned subjects where these systems may be deployed. However, there is now an ethical weakness. Specialised Software Systems can be developed indefinitely and will become astronomical in size, so many people may be storing personal data on these systems, as seen with Microsoft SharePoint, and a data-breach could therefore have real-world damaging consequences. If these systems are accessible by third parties, they need to be built with the consideration of security, as a large database with less-than-sufficient security is generally ethically dangerous. Though, large dedicated companies, such as those in the Defence area, may put way more emphasis on their security to protect internal data.
+In conclusion, Databases in Specialised Software Systems are everywhere. This is because, in many cases, commercial software may not be a viable solution to an issue, especially in secure places like the aforementioned subjects where these systems may be deployed. However, there is now an ethical weakness. Specialised Software Systems can be developed indefinitely and will become astronomical in size, so many people may be storing personal data on these systems, as seen with Microsoft SharePoint, and a data-breach could therefore have real-world damaging consequences. If these systems are accessible by third parties, they need to be built with the consideration of security, as a large database with less-than-sufficient security is generally ethically dangerous. Though, large dedicated companies, such as those in the Defence area, may put much more emphasis on their security to protect internal data. \cite{meyers2002software}
 
 \begin{center}
     \begin{tikzpicture}[scale=0.4, every node/.style={font=\small}]
@@ -172,42 +169,50 @@ Enterprise Information Management Systems (EIMS) structure how organisations man
 }
 
 %----------------------------------------------------------------------------------------
-%	Finance
+%	ETHICAL ISSUES
 %----------------------------------------------------------------------------------------
 
-\headerbox{Finance}{name=finance,column=0,below=introduction,above=references}{
+\headerbox{Ethical Issues \hspace{0.15cm} $\vcenter{\hbox{\includegraphics[width=0.015\linewidth]{Ethics.png}}}$}{name=ethics,column=0,below=introduction, span=2, above=references}{
 
-The following materials were required to complete the research:
+\begin{multicols}{3}
+    \large Privacy
+    \normalsize
+    \\
 
-\begin{itemize}\compresslist
-\item Curabitur pellentesque dignissim
-\item Eu facilisis est tempus quis
-\item Duis porta consequat lorem
-\item Eu facilisis est tempus quis
-\end{itemize}
+    Cloud Enterprise Information Management Systems store a large amount of company's data and personal information on online servers which creates ethical concerns because sensitive information can be accessed, shared, or used without the users knowing about it. Protecting privacy also becomes harder because data is being stored in different cloud systems and handled by different service providers. \\ 
 
-The following equations were used for statistical analysis:
+    \columnbreak
 
-\begin{equation}
-\cos^3 \theta =\frac{1}{4}\cos\theta+\frac{3}{4}\cos 3\theta
-\label{eq:refname}
-\end{equation}\
+    \large Responsibility
+    \normalsize
+    \\
 
+    Cloud systems bring a lot of information about an organisation in one place, due of which, organisations must make sure that data is stored, protected, and used in a safe and responsible way. Weak data management policies can lead to misuse of information, poor security, or breaking privacy laws.
+
+    \columnbreak
+
+    \large Ethical Significance
+    \normalsize
+    \\
+    \\
+    Information Management Systems' ease of data collection and analysis requires organisations to use them responsibly, ensuring privacy, transparency, and data protection.  \cite{pearson2013privacy}.
+
+    \begin{center}
+        \includegraphics[width=0.8\linewidth]{JobPerformance.png}
+        \captionof{figure}{Effects of Monitoring}
+    \end{center}
+
+\end{multicols}
 }
 
 %----------------------------------------------------------------------------------------
 %	Defence Systems
 %----------------------------------------------------------------------------------------
 
-\headerbox{Defence Systems \hspace{0.25cm} $\vcenter{\hbox{\includegraphics[width=0.02\linewidth]{Gavil.png}}}$}{name=defence,column=1,below=SystemArchitecture,span=2,above=references}{
+\headerbox{Defence Systems \hspace{0.25cm} $\vcenter{\hbox{\includegraphics[width=0.02\linewidth]{Gavil.png}}}$}{name=defence,column=2,below=SystemArchitecture,span=1,above=references}{
 
-\begin{multicols}{2}
-    The management of databases and their data within defence systems are inherent to national security and require state of the art software solutions. Interactions between countries and their national security follow security mandates set by international organisations, such as ISO 27001, which aim to continue 'establishing and continually improving… information security management systems' \cite{iso27001}. Another key concept for data management systems is implementing data-driven codebases that prioritise active control over functional-driven frameworks generally imposed upon databases. \cite{brynjolfsson2011}
-
-    \columnbreak
-    Social engineering attacks frequently pose a greater risk to defence operations as they are generally perceived as lower risk than generalised ones \cite{dataPlanning2015}. Hence, the Australian government, as of 2024, created the Cyber Security Act, where its main goal was to 'improve the response to and minimise the impact of cyber security incidents…' within society, while still giving governmental access to 'facilitate the whole of Government response to significant cyber security incidents…'\cite{cybersecurityAct2024}. This legislation also manages and secures sensitive data from perceived threats, providing citizens with a compliant software system that protects their data.
-
-\end{multicols}
+    The management of databases and their data within defence systems are inherent to national security and require state of the art software solutions. Interactions between countries follow security mandates set by international organisations, such as ISO 27001, which aim to continue 'establishing and continually improving...' systems \cite{iso27001}. Social engineering attacks frequently pose a greater risk to defence operations, hence, the Australian government, as of 2024, created the Cyber Security Act, with its main goal being to 'improve the response to and minimise the impact of cyber security incidents...' within society, while still giving governmental access to 'facilitate the whole of Government response to significant cyber security incidents...' \cite{cybersecurityAct2024}.
+    
 
 
 }
