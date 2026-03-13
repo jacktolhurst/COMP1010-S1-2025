@@ -15,7 +15,7 @@
 \setlength{\columnsep}{1.5em} 
 
 \usepackage{tikz} 
-\usetikzlibrary{shapes,arrows} 
+\usetikzlibrary{shapes,arrows,positioning} 
 
 \newcommand{\compresslist}{ 
 \setlength{\itemsep}{1pt}
@@ -104,7 +104,60 @@ Software Development is widespread across the IT field, with the sole purpose of
 
 \headerbox{Conclusion and Ethics}{name=conclusion,column=3,span=1,row=0,below=SystemArchitecture,above=bottom}{
 
-In conclusion, Databases in Specialised Software Systems are everywhere. This is because, in many cases, commercial software may not be a viable solution to an issue. Especially in secure places like the aforementioned subjects where these systems may be deployed. However, there is now an ethical weakness. Specialised Software Systems can be developed indefinitely and will become astronomical in size. Take Microsoft Sharepoint, for example. So many people (or staff within the parent company) may be storing personal data on these systems, and therefore, may have a real-world damaging response to a data-breach. If these systems are accessible by third parties, they need to be built with the consideration of security. A large database with less-than-sufficient security is generally ethically dangerous. Though, large dedicated companies, such as those in the Defence area, may put way more emphasis on their security to protect internal data.
+In conclusion, Databases in Specialised Software Systems are everywhere. This is because, in many cases, commercial software may not be a viable solution to an issue, especially in secure places like the aforementioned subjects where these systems may be deployed. However, there is now an ethical weakness. Specialised Software Systems can be developed indefinitely and will become astronomical in size, so many people may be storing personal data on these systems, as seen with Microsoft SharePoint, and a data-breach could therefore have real-world damaging consequences. If these systems are accessible by third parties, they need to be built with the consideration of security, as a large database with less-than-sufficient security is generally ethically dangerous. Though, large dedicated companies, such as those in the Defence area, may put way more emphasis on their security to protect internal data.
+
+\begin{center}
+    \begin{tikzpicture}[scale=0.5, every node/.style={font=\small}]
+
+        \colorlet{low}{green!70}
+        \colorlet{medium}{yellow!60!red!60}
+        \colorlet{high}{red!60}
+
+        \colorlet{redNode}{black!60!red}
+        \colorlet{yellowNode}{black!60!yellow}
+        \colorlet{greenNode}{black!60!green}
+
+        \draw[black, thick] (0,0) rectangle (6,6);
+
+        \fill[medium]  (0,4) rectangle (2,6);
+        \fill[high] (2,4) rectangle (4,6);
+        \fill[high]    (4,4) rectangle (6,6);
+
+        \fill[low]  (0,2) rectangle (2,4);
+        \fill[medium] (2,2) rectangle (4,4);
+        \fill[high]    (4,2) rectangle (6,4);
+
+        \fill[low]  (0,0) rectangle (2,2);
+        \fill[low]  (2,0) rectangle (4,2);
+        \fill[medium] (4,0) rectangle (6,2);
+
+        \node[rotate=90] at (-1.65, 3) {\textbf{Likelihood}};
+        \node[rotate=90] at (-0.5, 1) {\tiny Unlikely};
+        \node[rotate=90] at (-0.5, 3) {\tiny Possible};
+        \node[rotate=90] at (-0.5, 5) {\tiny Likely};
+
+        \node at (3, -1.4) {\textbf{Impact}};
+        \node at (1, -0.5) {\tiny Low};
+        \node at (3, -0.5) {\tiny Medium};
+        \node at (5, -0.5) {\tiny High};
+
+        \draw[redNode, thick] (5,3) circle (0.6) node {\small SE};
+        \draw[redNode, thick] (5,5) circle (0.6) node {\small DB};  
+        \draw[redNode, thick] (3,5) circle (0.6) node {\small UA}; 
+        \draw[yellowNode, thick] (3,3) circle (0.6) node {\small IT};
+        \draw[greenNode, thick] (3,1) circle (0.6) node {\small SF};
+
+        \node[anchor=north west, align=left, font=\scriptsize] at (6.3, 6) {
+            \textbf{\small Legend}\\[4pt]
+            {\small SE}\ Social Engineering\\ [2pt]
+            {\small DB}\ Data Breach\\ [2pt]
+            {\small UA}\ Unauthorised Access\\ [2pt]
+            {\small IT}\ Insider Threat\\ [2pt]
+            {\small SF}\ System Failure 
+        };
+
+    \end{tikzpicture}
+\end{center}
 
 }
 
