@@ -58,8 +58,7 @@ linewidth=2pt
 %	Introduction
 %----------------------------------------------------------------------------------------
 
-\headerbox{Introduction}{name=introduction,column=0,row=0}{
-
+\headerbox{Introduction\hspace{0.15cm} $\vcenter{\hbox{\includegraphics[width=0.015\linewidth]{Bulb.png}}}$}{name=introduction,column=0,row=0}{
 
 Software Development is widespread across the IT field, with the sole purpose of controlling computers. The intention is to harness the resources of a computer system to provide useful functionality for the user or entity controlling said subject. Created by a developer, code can be written to take control of functionality that a computer has, and in unison, a device can be manipulated into performing tasks to reach an end goal. Software is used for many purposes, from controlling file systems, to games, to creative arts, to simply entertaining the user. However, when software is deployed in a specialized environment, this is a Specialized Software System. Specialized Software Systems are deployed for niche applications as opposed to broad applications, thus, they are often developed by specialized teams. For example, Microsoft Sharepoint has a Specialised Software System, in the form of a Database. Within a specific deployment, goals are easier to set, and developers can focus on features, algorithms, and implementations that may benefit the specific application over a generalized deployment. This may increase productivity of the host system, if optimized for the environment that a Specialized Software System is being deployed within.
 
@@ -69,7 +68,7 @@ Software Development is widespread across the IT field, with the sole purpose of
 %	System Architecture
 %----------------------------------------------------------------------------------------
 
-\headerbox{System Architecture and Modelling}{name=SystemArchitecture,column=2,span=2,row=0}{
+\headerbox{System Architecture and Modelling \hspace{0.15cm} $\vcenter{\hbox{\includegraphics[width=0.015\linewidth]{Column.png}}}$}{name=SystemArchitecture,column=2,span=2,row=0}{
 
 \begin{multicols}{2}
     Enterprise Information Management Systems (EIMS) rely on a structured system architecture emphasising  consistency, integration and scalability of data modelled across the strictly defined life cycle of information management (figure~\ref{fig:lifecycle}).  Information across its life cycle is first created before being classified through the use of metadata which declares information about the data based on type, source or sensitivity level \cite{verizon2023}.  Data is then stored into a tiered repository within the database in a location based on its access frequency or cruciality making it significantly easier to find with enterprise search tools. After data is Securely Stored within the database collaboration tools like Microsoft SharePoint are integrated into the EIMS to enable secure sharing over the internet while governance mechanisms ensure that data access is regulated within the system throughout its life cycle before its eventual disposition.
@@ -89,7 +88,7 @@ Software Development is widespread across the IT field, with the sole purpose of
 %	References
 %----------------------------------------------------------------------------------------
 
-\headerbox{References}{name=references,column=0,span=3,row=0.75,height=0.25}{
+\headerbox{References\hspace{0.15cm} $\vcenter{\hbox{\includegraphics[width=0.015\linewidth]{Paper.png}}}$}{name=references,column=0,span=3,row=0.75,height=0.25}{
 
 \renewcommand{\section}[2]{\vskip 0.05em}
 \nocite{*} 
@@ -102,12 +101,12 @@ Software Development is widespread across the IT field, with the sole purpose of
 %	Conclusion and Ethics
 %----------------------------------------------------------------------------------------
 
-\headerbox{Conclusion and Ethics}{name=conclusion,column=3,span=1,row=0,below=SystemArchitecture,above=bottom}{
+\headerbox{Conclusion and Ethics\hspace{0.15cm} $\vcenter{\hbox{\includegraphics[width=0.015\linewidth]{Presentation.png}}}$}{name=conclusion,column=3,span=1,row=0,below=SystemArchitecture,above=bottom}{
 
 In conclusion, Databases in Specialised Software Systems are everywhere. This is because, in many cases, commercial software may not be a viable solution to an issue, especially in secure places like the aforementioned subjects where these systems may be deployed. However, there is now an ethical weakness. Specialised Software Systems can be developed indefinitely and will become astronomical in size, so many people may be storing personal data on these systems, as seen with Microsoft SharePoint, and a data-breach could therefore have real-world damaging consequences. If these systems are accessible by third parties, they need to be built with the consideration of security, as a large database with less-than-sufficient security is generally ethically dangerous. Though, large dedicated companies, such as those in the Defence area, may put way more emphasis on their security to protect internal data.
 
 \begin{center}
-    \begin{tikzpicture}[scale=0.5, every node/.style={font=\small}]
+    \begin{tikzpicture}[scale=0.4, every node/.style={font=\small}]
 
         \colorlet{low}{green!70}
         \colorlet{medium}{yellow!60!red!60}
@@ -141,11 +140,11 @@ In conclusion, Databases in Specialised Software Systems are everywhere. This is
         \node at (3, -0.5) {\tiny Medium};
         \node at (5, -0.5) {\tiny High};
 
-        \draw[redNode, thick] (5,3) circle (0.6) node {\small SE};
-        \draw[redNode, thick] (5,5) circle (0.6) node {\small DB};  
-        \draw[redNode, thick] (3,5) circle (0.6) node {\small UA}; 
-        \draw[yellowNode, thick] (3,3) circle (0.6) node {\small IT};
-        \draw[greenNode, thick] (3,1) circle (0.6) node {\small SF};
+        \draw[redNode, thick] (5,3) circle (0.7) node {\small SE};
+        \draw[redNode, thick] (5,5) circle (0.7) node {\small DB};  
+        \draw[redNode, thick] (3,5) circle (0.7) node {\small UA}; 
+        \draw[yellowNode, thick] (3,3) circle (0.7) node {\small IT};
+        \draw[greenNode, thick] (3,1) circle (0.7) node {\small SF};
 
         \node[anchor=north west, align=left, font=\scriptsize] at (6.3, 6) {
             \textbf{\small Legend}\\[4pt]
@@ -153,10 +152,12 @@ In conclusion, Databases in Specialised Software Systems are everywhere. This is
             {\small DB}\ Data Breach\\ [2pt]
             {\small UA}\ Unauthorised Access\\ [2pt]
             {\small IT}\ Insider Threat\\ [2pt]
-            {\small SF}\ System Failure 
+            {\small SF}\ System Failure
         };
-
     \end{tikzpicture}
+    \captionof{figure}{Impact and Likelihood matrix}
+    \label{fig:riskmatrix}
+
 \end{center}
 
 }
@@ -165,7 +166,7 @@ In conclusion, Databases in Specialised Software Systems are everywhere. This is
 %	DATA MANAGEMENT
 %----------------------------------------------------------------------------------------
 
-\headerbox{Data Management}{name=dataManagement,column=1,row=0,above=conclusion}{
+\headerbox{Data Management \hspace{0.15cm} $\vcenter{\hbox{\includegraphics[width=0.015\linewidth]{Server.png}}}$}{name=dataManagement,column=1,row=0,above=conclusion}{
 
 Enterprise Information Management Systems (EIMS) structure how organisations manage data across its lifecycle: Create, Classify, Store, Retrieve, Share, and Govern. By integrating centralised repositories, metadata classification, and enterprise search, these systems reduce data fragmentation and improve accessibility \cite{armbrust2010}. Automated retrieval technologies can reduce document handling time by 40–50\%, significantly improving operational efficiency \cite{davenport2018}. However, large centralised repositories present significant security risks, becoming prime targets for cyberattacks and requiring robust data protection measures.
 }
@@ -198,7 +199,8 @@ The following equations were used for statistical analysis:
 %	Defence Systems
 %----------------------------------------------------------------------------------------
 
-\headerbox{Defence Systems}{name=defence,column=1,below=SystemArchitecture,span=2,above=references}{ 
+\headerbox{Defence Systems \hspace{0.25cm} $\vcenter{\hbox{\includegraphics[width=0.02\linewidth]{Gavil.png}}}$}{name=defence,column=1,below=SystemArchitecture,span=2,above=references}{
+
 \begin{multicols}{2}
     The management of databases and their data within defence systems are inherent to national security and require state of the art software solutions. Interactions between countries and their national security follow security mandates set by international organisations, such as ISO 27001, which aim to continue 'establishing and continually improving… information security management systems' \cite{iso27001}. Another key concept for data management systems is implementing data-driven codebases that prioritise active control over functional-driven frameworks generally imposed upon databases. \cite{brynjolfsson2011}
 
@@ -210,7 +212,9 @@ The following equations were used for statistical analysis:
 
 }
 
-% --- end --- 
+%----------------------------------------------------------------------------------------
+%	End
+%----------------------------------------------------------------------------------------
 
 \end{poster}
 
