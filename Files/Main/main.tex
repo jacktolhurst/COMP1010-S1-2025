@@ -1,4 +1,4 @@
-\documentclass[landscape,a0paper,fontscale=0.285]{baposter} 
+\documentclass[landscape,a0paper,fontscale=0.3]{baposter} 
 
 \usepackage{graphicx} 
 \graphicspath{{figures/}}
@@ -58,7 +58,7 @@ linewidth=2pt
 %	Introduction
 %----------------------------------------------------------------------------------------
 
-\headerbox{Introduction\hspace{0.15cm} $\vcenter{\hbox{\includegraphics[width=0.015\linewidth]{Bulb.png}}}$}{name=introduction,column=0,row=0}{
+\headerbox{Introduction\hspace{0.15cm} $\vcenter{\hbox{\includegraphics[width=0.015\linewidth]{Bulb.png}}}$}{name=introduction,column=0,row=0,height=0.35}{
 
 Software Development is widespread across the IT field, with the sole purpose of harnessing the resources of a computer system to provide useful functionality for the user. Software is used for many purposes, from controlling file systems, to games, to creative arts. However, when software is deployed in a specialized environment, this is a Specialized Software System, deployed for niche applications and often developed by specialized teams. For example, Microsoft SharePoint has a Specialised Software System in the form of a Database. Within a specific deployment, developers can focus on features, algorithms, and implementations that benefit the application, which may increase productivity of the host system.
 }
@@ -72,7 +72,7 @@ Software Development is widespread across the IT field, with the sole purpose of
 \begin{multicols}{2}
     Enterprise Information Management Systems (EIMS) are a structured system that ensures consistency, integration and scalability of data. EIMS relies on a strictly defined life cycle of information management (figure~\ref{fig:lifecycle}). Information across its life cycle is first created before being classified through the use of metadata which declares information about the data based on type, source or sensitivity level. Data is then stored into a tiered repository within the database in a location based on its access frequency or cruciality making it significantly easier to find with enterprise search tools. After data is Securely Stored within the database collaboration tools like Microsoft SharePoint are integrated into the EIMS to enable secure sharing over the internet while governance mechanisms ensure that data access is regulated within the system throughout its life cycle before its eventual disposition.
     \begin{center}
-        \includegraphics[width=0.8\linewidth]{InformationLifeCycle.png}
+        \includegraphics[width=1\linewidth]{InformationLifeCycle.png}
         \captionof{figure}{The Life Cycle of software development}
         \label{fig:lifecycle}
     \end{center}
@@ -103,7 +103,7 @@ Software Development is widespread across the IT field, with the sole purpose of
 In conclusion, Databases in Specialised Software Systems are everywhere. This is because, in many cases, commercial software may not be a viable solution to an issue, especially in secure places like the aforementioned subjects where these systems may be deployed. However, there is now an ethical weakness. Specialised Software Systems can be developed indefinitely and will become astronomical in size, so many people may be storing personal data on these systems, as seen with Microsoft SharePoint, and a data-breach could therefore have real-world damaging consequences. If these systems are accessible by third parties, they need to be built with the consideration of security, as a large database with less-than-sufficient security is generally ethically dangerous. Though, large dedicated companies, such as those in the Defence area, may put much more emphasis on their security to protect internal data. \cite{meyers2002software}
 
 \begin{center}
-    \begin{tikzpicture}[scale=0.4, every node/.style={font=\small}]
+    \begin{tikzpicture}[scale=0.5, every node/.style={font=\small}]
 
         \colorlet{low}{green!70}
         \colorlet{medium}{yellow!60!red!60}
@@ -165,21 +165,22 @@ In conclusion, Databases in Specialised Software Systems are everywhere. This is
 
 \headerbox{Data Management \hspace{0.15cm} $\vcenter{\hbox{\includegraphics[width=0.015\linewidth]{Server.png}}}$}{name=dataManagement,column=1,row=0,above=conclusion}{
 
-Enterprise Information Management Systems (EIMS) structure how organisations manage data across its lifecycle: Create, Classify, Store, Retrieve, Share, and Govern. By integrating centralised repositories, metadata classification, and enterprise search, these systems reduce data fragmentation and improve accessibility \cite{armbrust2010}. Automated retrieval technologies can reduce document handling time by 40–50\%, significantly improving operational efficiency \cite{davenport2018}. However, large centralised repositories present significant security risks, becoming prime targets for cyberattacks and requiring robust data protection measures.
+Enterprise Information Management Systems (EIMS) structure how organisations manage data across its lifecycle: Create, Classify, Store, Retrieve, Share, and Govern. By integrating centralised repositories, metadata classification, and enterprise search, these systems reduce data fragmentation and improve accessibility \cite{armbrust2010}. Automated retrieval technologies can reduce document handling time by 40–50\%, significantly improving operational efficiency \cite{davenport2018}. However, large centralised repositories present significant security risks, becoming prime targets for cyberattacks and requiring robust data protection measures. Detailed access logs can support accountability but raise concerns around workplace surveillance, meaning organisations must balance efficiency with privacy protection.
+
 }
 
 %----------------------------------------------------------------------------------------
 %	ETHICAL ISSUES
 %----------------------------------------------------------------------------------------
 
-\headerbox{Ethical Issues \hspace{0.15cm} $\vcenter{\hbox{\includegraphics[width=0.015\linewidth]{Ethics.png}}}$}{name=ethics,column=0,below=introduction, span=2, above=references}{
+\headerbox{Ethical Issues \hspace{0.15cm} $\vcenter{\hbox{\includegraphics[width=0.015\linewidth]{Ethics.png}}}$}{name=ethics,column=0,below=dataManagement, span=2, above=references}{
 
 \begin{multicols}{3}
     \large Privacy
     \normalsize
     \\
 
-    Cloud Enterprise Information Management Systems store a large amount of company's data and personal information on online servers which creates ethical concerns because sensitive information can be accessed, shared, or used without the users knowing about it. Protecting privacy also becomes harder because data is being stored in different cloud systems and handled by different service providers. \\ 
+    Cloud Enterprise Information Management Systems store a large amount of company's data and personal information on online servers which creates ethical concerns because sensitive information can be accessed, shared, or used without the users knowing about it. Protecting privacy also becomes harder because data is being stored in different cloud systems and handled by different service providers\cite{pearson2013privacy}.  \\ 
 
     \columnbreak
 
@@ -190,7 +191,7 @@ Enterprise Information Management Systems (EIMS) structure how organisations man
     Centralising data in cloud systems makes strong data management essential, as weak policies risk misuse, breaches, and privacy violations.
 
     \begin{center}
-        \includegraphics[width=0.8\linewidth]{JobPerformance.png}
+        \includegraphics[width=1\linewidth]{JobPerformance.png}
         \captionof{figure}{Effects of Monitoring}
     \end{center}
 
@@ -200,7 +201,7 @@ Enterprise Information Management Systems (EIMS) structure how organisations man
     \normalsize
     \\
     \\
-    Information systems can record user activity such as which documents were opened, edited, or shared which helps organisations manage information and improve security. However, it can also allow employers to monitor employees continuously due to which ethical concerns arises when employees are monitored too much or when they do not know how their activity data is being collected and used. \cite{pearson2013privacy}.
+    Information systems can record user activity such as which documents were opened, edited, or shared which helps organisations manage information and improve security. However, it can also allow employers to monitor employees continuously due to which ethical concerns arises when employees are monitored too much or when they do not know how their activity data is being collected and used.  \cite{ball2010workplace}.
 
     
 
